@@ -3,6 +3,7 @@
   "short_name": "PPL Fit",
   "description": "Push Pull Legs workout tracker with AI coaching",
   "start_url": "/Fitness-App/",
+  "scope": "/Fitness-App/",
   "display": "standalone",
   "background_color": "#080808",
   "theme_color": "#080808",
