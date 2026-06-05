@@ -38,8 +38,8 @@ const META={
   Wednesday:{label:"PULL",theme:"#00C76A",accent:"#00FFAB",tagline:"Back · Biceps · Rear Delts"},
   Thursday: {label:"REST",theme:"#666",   accent:"#999",   tagline:"Active Recovery"},
   Friday:   {label:"PUSH",theme:"#FF4D1C",accent:"#FF8C00",tagline:"Chest · Shoulders · Triceps (Var)"},
-  Saturday: {label:"LEGS",theme:"#1C8AFF",accent:"#00CFFF",tagline:"Quads · Hamstrings · Glutes (Var)"},
-  Sunday:   {label:"PULL",theme:"#00C76A",accent:"#00FFAB",tagline:"Back · Biceps · Rear Delts (Var)"},
+  Saturday: {label:"PULL",theme:"#00C76A",accent:"#00FFAB",tagline:"Back · Biceps · Rear Delts (Var)"},
+  Sunday:   {label:"REST",theme:"#666",   accent:"#999",   tagline:"Rest & Recovery"},
 };
 const BASE={
   Monday:{main:[
@@ -92,24 +92,17 @@ const BASE={
     {id:"hang_raise",name:"Hanging Leg Raises",        sets:3,reps:"10-12",notes:"No swinging",                 sw:0,inc:0},
   ]},
   Saturday:{main:[
-    {id:"front_sq",  name:"Front Squat / Hack Squat",  sets:4,reps:"8-10", notes:"Quad-dominant emphasis",      sw:95, inc:5},
-    {id:"sldl",      name:"Stiff-Leg Deadlift",        sets:3,reps:"10-12",notes:"Feel hamstring stretch",      sw:95, inc:5},
-    {id:"lunge",     name:"Walking Lunges (DB)",       sets:3,reps:"12ea", notes:"Step long, torso upright",    sw:25, inc:2.5},
-    {id:"leg_ext",   name:"Leg Extension",             sets:3,reps:"12-15",notes:"Quad isolation, pause at top",sw:70, inc:5},
-    {id:"hip_thrust",name:"Hip Thrust (BB/Machine)",   sets:3,reps:"10-12",notes:"Squeeze glutes at top",       sw:95, inc:10},
-    {id:"calf_seat", name:"Seated Calf Raises",        sets:4,reps:"15-20",notes:"Soleus focus, slow tempo",    sw:70, inc:5},
-  ],core:[
-    {id:"pallof",    name:"Pallof Press",              sets:3,reps:"12ea", notes:"Resist rotation, stay square",sw:20, inc:2.5},
-    {id:"dead_bug",  name:"Dead Bug",                  sets:3,reps:"10ea", notes:"Press lower back into floor", sw:0,  inc:0},
-    {id:"c_crunch",  name:"Cable Crunch",              sets:3,reps:"15",   notes:"Round spine, don't hip flex", sw:50, inc:5},
-  ]},
+    {id:"deadlift",  name:"Deadlift",                   sets:3,reps:"4-6",    notes:"Heavy compound — brace all",   sw:185,inc:10},
+    {id:"tbar_row",  name:"T-Bar / Chest-Supported Row",sets:3,reps:"8-10",  notes:"Reduce lower back fatigue",    sw:90, inc:5},
+    {id:"sa_row",    name:"Single-Arm DB Row",          sets:3,reps:"10-12ea",notes:"Full stretch at bottom",      sw:50, inc:5},
+    {id:"pulldown",  name:"Straight-Arm Pulldown",      sets:3,reps:"12-15", notes:"Lats only, no bicep",          sw:40, inc:2.5},
+    {id:"inc_curl",  name:"Incline DB Curl",            sets:3,reps:"10-12", notes:"Great for long head",          sw:20, inc:2.5},
+    {id:"cable_curl",name:"Cable Curl (Low Pulley)",    sets:2,reps:"12-15", notes:"Constant tension",             sw:35, inc:2.5},
+  ],core:[]},
   Sunday:{main:[
-    {id:"deadlift",  name:"Deadlift",                  sets:3,reps:"4-6",  notes:"Heavy compound — brace all",  sw:185,inc:10},
-    {id:"tbar_row",  name:"T-Bar / Chest-Supported Row",sets:3,reps:"8-10",notes:"Reduce lower back fatigue",   sw:90, inc:5},
-    {id:"sa_row",    name:"Single-Arm DB Row",         sets:3,reps:"10-12ea",notes:"Full stretch at bottom",    sw:50, inc:5},
-    {id:"pulldown",  name:"Straight-Arm Pulldown",     sets:3,reps:"12-15",notes:"Lats only, no bicep",         sw:40, inc:2.5},
-    {id:"inc_curl",  name:"Incline DB Curl",           sets:3,reps:"10-12",notes:"Great for long head",         sw:20, inc:2.5},
-    {id:"cable_curl",name:"Cable Curl (Low Pulley)",   sets:2,reps:"12-15",notes:"Constant tension",            sw:35, inc:2.5},
+    {id:"walk",      name:"Zone 2 Cardio / Walk",       sets:1,reps:"20-30m",notes:"Heart rate under 140 bpm",    sw:0,inc:0},
+    {id:"foam",      name:"Foam Rolling",               sets:1,reps:"10 min",notes:"Calves, quads, lats",         sw:0,inc:0},
+    {id:"stretch",   name:"Static Stretching",          sets:1,reps:"10 min",notes:"Hold each stretch 20-30s",    sw:0,inc:0},
   ],core:[]},
 };
 const FOODS=[
@@ -529,4 +522,4 @@ function App(){
 ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(App));
 </script>
 </body>
-</html>
+</html> 
